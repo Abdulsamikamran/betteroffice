@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build:wasm": "bun scripts/build-wasm.ts",
+    "build:wasm": "node init && bun scripts/build-wasm.ts",
     "predeploy": "bun run build:wasm",
     "deploy": "wrangler deploy",
-    "dev": "bun run build:wasm && wrangler dev",
+    "dev": "node init && bun run build:wasm && wrangler dev",
     "pretest": "bun run build:wasm",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
