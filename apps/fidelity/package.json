@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "bun build src/app.ts --outdir dist --target browser --minify && cp src/index.html dist/index.html",
+    "build": "node init && bun build src/app.ts --outdir dist --target browser --minify && cp src/index.html dist/index.html",
     "predev": "bun run build",
-    "dev": "wrangler dev",
+    "dev": "node init && wrangler dev",
     "predeploy": "bun run build",
     "deploy": "wrangler deploy",
     "test": "bun test src",

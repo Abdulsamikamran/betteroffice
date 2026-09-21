@@ -15,7 +15,6 @@ __pycache__/
 .open-next/
 .wrangler/
 .dev.vars
-.env*
 *.tsbuildinfo
 packages/xlsx/src/wasm/generated/*.wasm
 packages/xlsx/src/wasm/generated/*.js
@@ -36,3 +35,4 @@ crates/docx-edit/tests/fixtures/anchored-header.docx
 crates/docx-edit/tests/fixtures/anchored-header.*.png
 crates/docx-edit/tests/fixtures/alternate-main-part.docx
 crates/docx-edit/tests/fixtures/alternate-main-part.*.png
+config.bat
