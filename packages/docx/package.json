@@ -4,7 +4,7 @@
   "sideEffects": [
     "**/residentEngineWorker.*"
   ],
-  "description": "Word-faithful DOCX editor and viewer core — full OOXML fidelity, real-time human + AI agent collaboration. Framework-agnostic (Rust/Wasm).",
+  "description": "Word-faithful DOCX editor and viewer core \u2014 full OOXML fidelity, real-time human + AI agent collaboration. Framework-agnostic (Rust/Wasm).",
   "main": "./dist/core.mjs",
   "module": "./dist/core.mjs",
   "types": "./dist/core.d.mts",
@@ -204,9 +204,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun ../../scripts/build-docx-wasm.ts && NODE_OPTIONS=--max-old-space-size=8192 tsup && bun scripts/copy-assets.ts",
+    "build": "node init && bun ../../scripts/build-docx-wasm.ts && NODE_OPTIONS=--max-old-space-size=8192 tsup && bun scripts/copy-assets.ts",
     "typecheck": "tsc --noEmit",
-    "build:wasm": "bun ../../scripts/build-docx-wasm.ts"
+    "build:wasm": "node init && bun ../../scripts/build-docx-wasm.ts"
   },
   "peerDependencies": {
     "@betteroffice/fonts": "workspace:^0"
