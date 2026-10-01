@@ -15,7 +15,6 @@ __pycache__/
 .open-next/
 .wrangler/
 .dev.vars
-.env*
 *.tsbuildinfo
 packages/xlsx/src/wasm/generated/*.wasm
 packages/xlsx/src/wasm/generated/*.js
@@ -41,3 +40,7 @@ crates/docx-edit/tests/fixtures/alternate-main-part.*.png
 /g*.log
 /gate.sh
 /gate2.sh
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
