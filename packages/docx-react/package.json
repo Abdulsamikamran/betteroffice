@@ -1,7 +1,7 @@
 {
   "name": "@betteroffice/docx-react",
-  "version": "0.4.1",
-  "description": "Word-faithful React DOCX editor and viewer — full OOXML fidelity, real-time human + AI agent collaboration.",
+  "version": "0.4.2",
+  "description": "Word-faithful React DOCX editor and viewer \u2014 full OOXML fidelity, real-time human + AI agent collaboration.",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
@@ -19,8 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup && bun run build:css",
-    "build:css": "tailwindcss -c ./tailwind.config.js -i ./src/styles/editor.css -o ./dist/styles.css --minify",
+    "build": "node init && tsup && bun run build:css",
+    "build:css": "node init && tailwindcss -c ./tailwind.config.js -i ./src/styles/editor.css -o ./dist/styles.css --minify",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
