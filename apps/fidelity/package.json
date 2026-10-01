@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "bun build src/dashboard.ts src/compare.ts --outdir dist --target browser --minify && bun styles.ts && cp src/index.html src/compare.html src/icon.svg dist/",
+    "build": "node init && bun build src/dashboard.ts src/compare.ts --outdir dist --target browser --minify && bun styles.ts && cp src/index.html src/compare.html src/icon.svg dist/",
     "predev": "bun run build",
-    "dev": "wrangler dev",
+    "dev": "node init && wrangler dev",
     "predeploy": "bun run build",
     "deploy": "wrangler deploy",
     "test": "bun test src",

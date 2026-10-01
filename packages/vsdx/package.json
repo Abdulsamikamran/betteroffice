@@ -18,8 +18,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun run build:wasm && tsup",
-    "build:wasm": "bun ../../scripts/build-vsdx-wasm.ts",
+    "build": "node init && bun run build:wasm && tsup",
+    "build:wasm": "node init && bun ../../scripts/build-vsdx-wasm.ts",
     "typecheck": "tsc --noEmit -p ."
   },
   "devDependencies": {
