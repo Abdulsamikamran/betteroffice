@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "typecheck": "tsc --noEmit -p ."
   },
   "dependencies": {
