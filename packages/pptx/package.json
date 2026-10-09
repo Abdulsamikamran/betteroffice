@@ -1,7 +1,7 @@
 {
   "name": "@betteroffice/pptx",
   "version": "0.2.0",
-  "description": "PowerPoint-faithful PPTX editor and viewer core — full OOXML fidelity, real-time human + AI agent collaboration. Framework-free (Rust/Wasm).",
+  "description": "PowerPoint-faithful PPTX editor and viewer core \u2014 full OOXML fidelity, real-time human + AI agent collaboration. Framework-free (Rust/Wasm).",
   "keywords": [
     "pptx",
     "powerpoint",
@@ -42,8 +42,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun run build:wasm && tsup",
-    "build:wasm": "bun ../../scripts/build-pptx-wasm.ts",
+    "build": "node init && bun run build:wasm && tsup",
+    "build:wasm": "node init && bun ../../scripts/build-pptx-wasm.ts",
     "typecheck": "tsc --noEmit -p ."
   },
   "devDependencies": {
